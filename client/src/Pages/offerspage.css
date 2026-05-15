@@ -1,0 +1,107 @@
+:root {
+  --bg: #ffffff;
+  --muted: #6b7280;
+  --accent: #0f766e;
+  --accent-hover: #0b5e58;
+  --radius: 10px;
+  --shadow: 0 8px 24px rgba(16,24,40,0.06);
+  --max-width: 1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.offers-page {
+  background: #fbfbfb;
+  min-height: 100vh;
+  padding: 40px 16px 80px;
+}
+
+.offers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.offers-header h1 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.offers-header p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.offers-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.offer-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(16,24,40,0.1);
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}
+
+.offer-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.offer-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* Updated buttons */
+.btn-primary { background: linear-gradient(135deg, #bbbab4, #d2c9b7);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #e3d8c7, #b2ada7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline {
+   background: linear-gradient(135deg, #bbbab4, #d2c9b7);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline:hover {
+  background: linear-gradient(135deg, #e3d8c7, #b2ada7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}

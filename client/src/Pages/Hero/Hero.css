@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+.hero {
+  height: 700px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  background-image: url("E:\KESHVIKA site/keshvika/src/components/assets/scenary-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.keshvika {
+  font-family: "Modak", cursive;
+  font-size: 150px;
+  color: #debdc1;
+}
+.tagline {
+  justify-content: center;
+  color: #debdc1;
+  font-size: 25px;
+  align-items: center;
+}

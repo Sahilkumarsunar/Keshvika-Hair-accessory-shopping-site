@@ -1,0 +1,153 @@
+/* client/src/Pages/Login.css */
+
+/* Reset-ish (small) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Page background and centering */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f5f3ef 0%, #e9e3d8 100%);
+  padding: 40px 20px;
+}
+
+/* Card container */
+.login-container {
+  width: 420px;
+  max-width: calc(100% - 40px);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.12);
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.login-header h1 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+.login-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #444;
+  font-weight: 600;
+}
+
+.form-group input {
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(34,34,34,0.08);
+  background: #faf9f6;
+  font-size: 14px;
+  color: #222;
+  transition: box-shadow .15s ease, transform .12s ease;
+}
+
+/* focus state */
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(34,34,34,0.16);
+  box-shadow: 0 6px 18px rgba(34,34,34,0.06);
+  transform: translateY(-1px);
+}
+
+/* Error message */
+.error-message {
+  background: #fff1f0;
+  color: #9b1c1c;
+  border: 1px solid rgba(155,28,28,0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* Primary button */
+.login-button {
+  margin-top: 6px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: #111;
+  /* soft gradient similar to your style sample */
+  background: linear-gradient(135deg, #e4ddcf 0%, #cfc5b3 100%);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-button:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+/* Toggle link below form */
+.toggle-mode {
+  margin-top: 10px;
+  text-align: center;
+}
+.toggle-mode p {
+  font-size: 13px;
+  color: #555;
+}
+.toggle-mode .toggle-link {
+  color: #1f6feb;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+/* small helper: make the label/input stack nicely on small screens */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 18px;
+  }
+  .login-header h1 {
+    font-size: 20px;
+  }
+  .login-button {
+    height: 46px;
+    font-size: 14px;
+  }
+}

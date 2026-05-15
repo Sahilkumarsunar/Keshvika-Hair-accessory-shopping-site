@@ -1,0 +1,244 @@
+/* 🌿 Keshvika Contact Page Styles */
+
+:root {
+  /* Color Palette */
+  --bg: #ffffff;
+  --soft-bg: #fafafa;
+  --muted: #6b7280;
+  --accent: #0f766e;
+  --accent-light: #14b8a6;
+  --heading: #1e293b;
+  --text: #334155;
+
+  /* Aesthetic & Layout */
+  --radius: 12px;
+  --shadow: 0 8px 28px rgba(0, 0, 0, 0.05);
+  --hover-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --max-width: 1100px;
+
+  /* Typography */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* 🌼 Page Container */
+.contact-page {
+  background: linear-gradient(180deg, #fdfdfd, #f9fafb);
+  min-height: 100vh;
+  padding-bottom: 70px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* 🌤️ Hero Section */
+.contact-hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(20, 184, 166, 0.04));
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contact-hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--heading);
+  letter-spacing: -0.5px;
+}
+
+.contact-hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* 🪴 Main Grid */
+.contact-grid {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* 🌷 Shared Card Styles */
+.contact-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  transition: all 0.25s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hover-shadow);
+}
+
+/* 🌻 Info Card */
+.contact-info h2 {
+  margin-top: 0;
+  color: var(--heading);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  font-size: 0.97rem;
+  color: var(--text);
+}
+
+.info-list li strong {
+  color: var(--accent);
+}
+
+.hours {
+  background: rgba(15, 118, 110, 0.04);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.hours h4 {
+  margin: 0 0 6px;
+  color: var(--heading);
+  font-size: 1rem;
+}
+
+/* 🌸 Form Card */
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: var(--heading);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.97rem;
+  background: #f9fafb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+  background: #fff;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* 🕊️ Form Buttons */
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {  background: linear-gradient(135deg, #bbbab4, #d2c9b7);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #e3d8c7, #b2ada7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline {
+   background: linear-gradient(135deg, #bbbab4, #d2c9b7);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline:hover {
+  background: linear-gradient(135deg, #e3d8c7, #b2ada7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌿 Status Message */
+.status {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.status.err {
+  color: #dc2626;
+}
+.status.ok {
+  color: #047857;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 880px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  .contact-card {
+    padding: 22px;
+  }
+}
